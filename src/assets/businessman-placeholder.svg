@@ -1,0 +1,41 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark underground/subway background -->
+  <rect width="1200" height="800" fill="url(#backgroundGradient)"/>
+  
+  <!-- Blurred motion lines to simulate movement -->
+  <g opacity="0.6">
+    <rect x="0" y="100" width="1200" height="4" fill="#f97316" opacity="0.8"/>
+    <rect x="0" y="200" width="1200" height="6" fill="#eab308" opacity="0.6"/>
+    <rect x="0" y="350" width="1200" height="3" fill="#06b6d4" opacity="0.7"/>
+    <rect x="0" y="450" width="1200" height="5" fill="#8b5cf6" opacity="0.5"/>
+    <rect x="0" y="600" width="1200" height="4" fill="#ec4899" opacity="0.6"/>
+  </g>
+  
+  <!-- Businessman silhouette in center -->
+  <g transform="translate(600, 400)">
+    <!-- Head -->
+    <circle cx="0" cy="-120" r="35" fill="#1f2937"/>
+    <!-- Body -->
+    <rect x="-25" y="-85" width="50" height="80" rx="5" fill="#111827"/>
+    <!-- Arms -->
+    <rect x="-35" y="-70" width="15" height="60" rx="7" fill="#111827"/>
+    <rect x="20" y="-70" width="15" height="60" rx="7" fill="#111827"/>
+    <!-- Legs -->
+    <rect x="-15" y="-5" width="12" height="80" rx="6" fill="#111827"/>
+    <rect x="3" y="-5" width="12" height="80" rx="6" fill="#111827"/>
+  </g>
+  
+  <!-- Atmospheric lighting -->
+  <circle cx="600" cy="400" r="200" fill="url(#lightGradient)" opacity="0.3"/>
+  
+  <defs>
+    <radialGradient id="backgroundGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#374151"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </radialGradient>
+    <radialGradient id="lightGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
