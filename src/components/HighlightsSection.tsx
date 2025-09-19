@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import businessmanImg from "@/assets/businessman-alone.png";
-import kyoceraHqImg from "@/assets/kyocera-hq.jpg";
+import kyoceraHqImg from "@/assets/Kyocera-hq.jpg";
 import toyotaHqImg from "@/assets/toyota-hq.jpg";
 import okayamaImg from "@/assets/okayama.webp";
 import kawamuraImg from "@/assets/leg.jpg";
