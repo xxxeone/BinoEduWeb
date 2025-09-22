@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Check, Crown } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 // Import testimony images
 import React, { useState } from 'react';
@@ -12,7 +11,6 @@ import testimony5 from '../assets/Testimony 2/18.png';
 import testimony6 from '../assets/Testimony 2/19.png';
 
 const PricingSection = () => {
-  
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const plans = [
     {
@@ -162,16 +160,11 @@ const PricingSection = () => {
                       <ul className="space-y-3">
                         {plan.includes.slice(0, 3).map((item, idx) => (
                           <li key={idx} className="flex items-start gap-3 text-base text-gray-300 group/item animate-slide-in-view" style={{animationDelay: `${index * 0.2 + idx * 0.1 + 0.5}s`}}>
-                            <span className="w-2 h-2 bg-gradient-to-r from-white/60 to-white/80 rounded-full mt-3 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300"></span>
-                            <span className="leading-relaxed group-hover/item:text-white transition-colors duration-300">{item}</span>
+                            <span className="w-2 h-2 bg-gradient-to-r from-white/60 to-white/80 rounded-full mt-3 flex-shrink-0 group-hover:item:scale-125 transition-transform duration-300"></span>
+                            <span className="leading-relaxed group-hover:item:text-white transition-colors duration-300">{item}</span>
                           </li>
                         ))}
                       </ul>
-                      
-                      <div className="mt-6 flex items-center gap-3 text-base text-gray-400 bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-                        <span className="font-semibold text-gray-300">不含：</span>
-                        <span>{plan.excludes}</span>
-                      </div>
                     </div>
                     
                     <div className="animate-fade-in-up" style={{animationDelay: `${index * 0.2 + 0.4}s`}}>
@@ -184,8 +177,8 @@ const PricingSection = () => {
                       <ul className="space-y-3">
                         {plan.includes.slice(3).map((item, idx) => (
                           <li key={idx + 3} className="flex items-start gap-3 text-base text-gray-300 group/item animate-slide-in-view" style={{animationDelay: `${index * 0.2 + (idx + 3) * 0.1 + 0.5}s`}}>
-                            <span className="w-2 h-2 bg-gradient-to-r from-white/60 to-white/80 rounded-full mt-3 flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300"></span>
-                            <span className="leading-relaxed group-hover/item:text-white transition-colors duration-300">{item}</span>
+                            <span className="w-2 h-2 bg-gradient-to-r from-white/60 to-white/80 rounded-full mt-3 flex-shrink-0 group-hover:item:scale-125 transition-transform duration-300"></span>
+                            <span className="leading-relaxed group-hover:item:text-white transition-colors duration-300">{item}</span>
                           </li>
                         ))}
                       </ul>
@@ -200,12 +193,12 @@ const PricingSection = () => {
                       {plan.price}
                     </div>
                     {plan.discount && (
-                      <div className="text-lg font-bold text-gray-200 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/30">
-                        {plan.discount}
-                      </div>
+                      <div className="text-lg font-bold text-gray-200 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/30">{plan.discount}</div>
                     )}
+                    <div className="mt-4 text-sm text-gray-400">
+                      不含：{plan.excludes}
+                    </div>
                   </div>
-                  
                   <Button
                     variant="cta"
                     size="lg"
@@ -330,7 +323,7 @@ const PricingSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-16 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-7xl mx-auto">
             {testimonyImages.map((image, index) => (
               <div
                 key={index}

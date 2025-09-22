@@ -165,11 +165,6 @@ const PricingSectionEn = () => {
                           </li>
                         ))}
                       </ul>
-                      
-                      <div className="mt-6 flex items-center gap-3 text-base text-gray-400 bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-                        <span className="font-semibold text-gray-300">Excludes:</span>
-                        <span>{plan.excludes}</span>
-                      </div>
                     </div>
                     
                     <div className="animate-fade-in-up" style={{animationDelay: `${index * 0.2 + 0.4}s`}}>
@@ -202,8 +197,10 @@ const PricingSectionEn = () => {
                         {plan.discount}
                       </div>
                     )}
+                    <div className="mt-4 text-sm text-gray-400">
+                      Excludes: {plan.excludes}
+                    </div>
                   </div>
-                  
                   <Button
                     variant="cta"
                     size="lg"
