@@ -18,14 +18,14 @@ export type BrochureContent = {
 // 占位内容：请用 PDF 真实内容替换（public/brochure.pdf）
 export const brochure: BrochureContent = {
   meta: {
-    title: "稻盛之道·经营哲学商务研修团",
+    title: "突破 RM10M 天花板",
     edition: "4.0",
     duration: "6天5晚",
   },
   summary: {
-    tagline: "以哲学为底层操作系统，重启企业增长与组织凝聚",
+    tagline: "突破企业营收天花板，解锁世界级经营管理智慧",
     intro:
-      "围绕稻盛和夫经营哲学核心，融合企业参访与沉浸式修学，帮助企业家在战略·组织·心法上达成突破。以下内容为项目手册提要，完整详情请查看或下载 PDF 手册。",
+      "深度参访日本顶级企业，学习突破营收瓶颈的核心方法论，帮助企业家在战略·组织·心法上达成 RM10M 突破。以下内容为项目手册提要，完整详情请查看或下载 PDF 手册。",
   },
   pillars: [
     "敬天爱人",

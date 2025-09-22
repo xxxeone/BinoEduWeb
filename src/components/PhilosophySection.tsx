@@ -38,9 +38,9 @@ const PhilosophySection = () => {
     <section className="py-24 bg-[#faf8f3] border-t border-b border-[#ece7df]">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-block px-6 py-2 bg-[#fff] border border-[#e5e1d8] rounded-full text-[#a21caf] text-lg tracking-widest font-semibold mb-4 shadow-sm">稻盛之道 · 经营哲学</div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e193a] mb-4 tracking-tight">终身受益的哲学智慧</h2>
-          <p className="text-lg text-[#6b7280] max-w-2xl mx-auto">融合稻盛和夫一生经营哲学，助力企业家与管理者实现事业与人生的双重飞跃。</p>
+          <div className="inline-block px-6 py-2 bg-[#fff] border border-[#e5e1d8] rounded-full text-[#a21caf] text-lg tracking-widest font-semibold mb-4 shadow-sm">突破天花板 · 世界级经营智慧</div>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e193a] mb-4 tracking-tight">解锁 RM10M 营收密码</h2>
+          <p className="text-lg text-[#6b7280] max-w-2xl mx-auto">深度学习日本顶级企业经营管理精髓，助力企业家突破营收瓶颈，实现事业新高度。</p>
         </div>
         <div className="grid md:grid-cols-3 gap-10">
           {philosophyList.map((item, idx) => (

@@ -39,7 +39,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src={logo} alt="Bino EduTour" className="h-8 w-auto" />
+            <img src={logo} alt="Bino Edu Tour" className="h-8 w-auto" />
             <span className="text-xl font-bold text-white drop-shadow-xl">
               {isEnglish ? "Bino Edu Tour" : "百诺研学"}
             </span>
