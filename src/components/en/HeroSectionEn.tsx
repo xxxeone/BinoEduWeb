@@ -101,13 +101,13 @@ const HeroSectionEn = () => {
       {/* Content */}
       <div className="relative z-10 w-full mx-auto px-6 max-w-5xl text-center flex flex-col items-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.15] tracking-tight text-white drop-shadow-[0_8px_32px_rgba(0,0,0,0.6)] opacity-0 translate-y-8 animate-[hero-title_1.2s_ease-out_0.3s_forwards]">
-          Break <span className="text-emerald-400 font-black animate-[text-shimmer_12s_ease-in-out_infinite]">
+          Break the <span className="text-emerald-400 font-black animate-[text-shimmer_12s_ease-in-out_infinite]">
             RM10M
-          </span> Ceiling ·<br className="hidden sm:block" /> Enter Japan's Fortune 500
+          </span> Revenue Ceiling ·<br className="hidden sm:block" /> Learn from Japan's Fortune 500
         </h1>
         <h2 className="mt-8 text-lg md:text-xl lg:text-2xl font-medium text-gray-200 leading-relaxed max-w-4xl opacity-0 translate-y-6 animate-[hero-subtitle_1s_ease-out_0.8s_forwards]">
           <span className="inline-block animate-[slide-in-left_0.8s_ease-out_1.2s_both]">6 Days 5 Nights · Kyocera / Toyota / Inamori Memorial</span><br />
-          <span className="text-gray-300 inline-block animate-[slide-in-right_0.8s_ease-out_1.4s_both]">Not a tour, but a life-changing business transformation journey</span>
+          <span className="text-gray-300 inline-block animate-[slide-in-right_0.8s_ease-out_1.4s_both]">A transformative business learning journey, not just a tour</span>
         </h2>
         
         {/* CTA section with Date Display above button */}

@@ -10,7 +10,7 @@ const enterprises = [
 	{
 		name: "Kyocera Group HQ",
 		description:
-			"The first Fortune 500 company founded by Kazuo Inamori; Experience how 'Respect Heaven, Love People' philosophy permeates corporate organization and management; From precision ceramics to automotive, industrial, AI expansion.",
+			"The first Fortune 500 company founded by Kazuo Inamori; Experience how 'Respect Heaven, Love People' philosophy permeates corporate organization and management; From precision ceramics to automotive, industrial, and AI expansion.",
 		tags: ["Respect Heaven Love People", "Amoeba Management", "Six Disciplines"],
 		highlights: ["Executive/Senior Manager Dialogue: How Philosophy Translates to Operations", "Visit Exhibition Hall & History Museum, Insight into Long-termism"],
 		image: kyoceraHqImg,
@@ -18,7 +18,7 @@ const enterprises = [
 	{
 		name: "Toyota Motor HQ",
 		description:
-			"Fortune 500 – 2024 Rank 15th; World-class culture of Lean Production and Continuous Improvement (Kaizen); Maintaining high sales and revenue in the electric vehicle era.",
+			"Fortune 500 – 2024 Rank 15th; World-class culture of Lean Production and Continuous Improvement (Kaizen); Maintaining high sales and revenue during the electric vehicle era transition.",
 		tags: ["Lean Production", "Kaizen Improvement", "Genchi Genbutsu"],
 		highlights: ["TPS On-site Learning: Kanban/Takt/Standard Work", "Exchange with Frontline Managers on Continuous Improvement Mechanisms"],
 		image: toyotaHqImg,
@@ -34,7 +34,7 @@ const enterprises = [
 	{
 		name: "Kawamura Gishi",
 		description:
-			"Prosthetics, orthoses and assistive devices; Highly customized and innovative R&D, growing from niche to industry 'hidden champion', practicing Inamori management philosophy.",
+			"Prosthetics, orthoses and assistive devices; Highly customized and innovative R&D, growing from niche market to industry 'hidden champion', practicing Inamori management philosophy.",
 		tags: ["Hidden Champion", "Customized R&D", "Craftsmanship Spirit"],
 		highlights: ["R&D & Prototyping Workshop Visit", "Individual Rehabilitation Process & Empathetic Design"],
 		image: kawamuraImg,
@@ -42,7 +42,7 @@ const enterprises = [
 	{
 		name: "Umemori Sushi",
 		description:
-			"Founder is Kazuo Inamori's direct disciple; Sharing 'What is Management / Mission / Unity'; Experience daily company morning meetings, how ideology-first lands in practice.",
+			"Founder is Kazuo Inamori's direct disciple; Sharing 'What is Management / Mission / Unity'; Experience daily company morning meetings, learning how ideology-driven management works in practice.",
 		tags: ["Morning Meeting", "Mission/Management Philosophy", "Unity"],
 		highlights: ["Participate in Morning Meeting: Philosophy Recitation & Goal Consensus", "Tea Session with Founding Team Sharing Management Experience"],
 		image: sushiImg,

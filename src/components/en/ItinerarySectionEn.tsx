@@ -178,7 +178,7 @@ const ItinerarySectionEn = () => {
 				{/* Section header */}
 				<div className="text-center mb-24 opacity-0 animate-[fade-in-up_1s_ease-out_forwards]">
 					<h2 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tight text-white mb-8 drop-shadow-[0_8px_32px_rgba(0,0,0,0.8)]">
-						Itinerary <span className="text-blue-400 hover:text-blue-300 transition-all duration-500 cursor-pointer hover:drop-shadow-[0_0_30px_rgba(59,130,246,1)] hover:scale-110 inline-block">Schedule</span>
+						Daily <span className="text-blue-400 hover:text-blue-300 transition-all duration-500 cursor-pointer hover:drop-shadow-[0_0_30px_rgba(59,130,246,1)] hover:scale-110 inline-block">Itinerary</span>
 					</h2>
 					<div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-emerald-400 mx-auto mb-8 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.6)]" />
 					<p className="text-2xl md:text-3xl text-gray-200 font-semibold max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
@@ -194,8 +194,8 @@ const ItinerarySectionEn = () => {
 							className="group relative bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)] opacity-0 animate-[slide-in-view_0.8s_ease-out_forwards]"
 							style={{ animationDelay: `${idx * 0.2}s` }}
 						>
-							{/* Location label - top right position, ensure visibility on mobile */}
-							<div className="absolute top-4 right-4 z-20">
+							{/* Location label - mobile: separate line, desktop: top right */}
+							<div className="md:absolute md:top-4 md:right-4 z-20">
 								<div className="relative">
 									{/* Main badge */}
 									<div className="bg-gradient-to-br from-emerald-500 via-green-500 to-emerald-600 text-white font-bold px-3 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl shadow-2xl border-2 border-emerald-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300">
@@ -207,6 +207,16 @@ const ItinerarySectionEn = () => {
 									
 									{/* Subtle glow effect */}
 									<div className="absolute inset-0 rounded-xl md:rounded-2xl bg-gradient-to-br from-emerald-400/20 to-green-500/20 blur-lg -z-10"></div>
+								</div>
+							</div>
+
+							{/* Mobile location display - separate line */}
+							<div className="md:hidden px-6 pt-4 pb-2">
+								<div className="inline-block bg-gradient-to-br from-emerald-500 via-green-500 to-emerald-600 text-white font-bold px-4 py-2 rounded-xl shadow-xl border-2 border-emerald-400/50">
+									<div className="flex items-center gap-2">
+										<span className="text-sm">📍</span>
+										<span className="text-sm font-extrabold tracking-wide">{day.location}</span>
+									</div>
 								</div>
 							</div>
 

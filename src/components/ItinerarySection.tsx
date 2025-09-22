@@ -194,8 +194,8 @@ const ItinerarySection = () => {
 							className="group relative bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)] opacity-0 animate-[slide-in-view_0.8s_ease-out_forwards]"
 							style={{ animationDelay: `${idx * 0.2}s` }}
 						>
-							{/* Location label - top right position, ensure visibility on mobile */}
-							<div className="absolute top-4 right-4 z-20">
+							{/* Location label - mobile: separate line, desktop: top right */}
+							<div className="md:absolute md:top-4 md:right-4 z-20">
 								<div className="relative">
 									{/* Main badge */}
 									<div className="bg-gradient-to-br from-emerald-500 via-green-500 to-emerald-600 text-white font-bold px-3 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl shadow-2xl border-2 border-emerald-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300">
@@ -207,6 +207,16 @@ const ItinerarySection = () => {
 									
 									{/* Subtle glow effect */}
 									<div className="absolute inset-0 rounded-xl md:rounded-2xl bg-gradient-to-br from-emerald-400/20 to-green-500/20 blur-lg -z-10"></div>
+								</div>
+							</div>
+
+							{/* Mobile location display - separate line */}
+							<div className="md:hidden px-6 pt-4 pb-2">
+								<div className="inline-block bg-gradient-to-br from-emerald-500 via-green-500 to-emerald-600 text-white font-bold px-4 py-2 rounded-xl shadow-xl border-2 border-emerald-400/50">
+									<div className="flex items-center gap-2">
+										<span className="text-sm">📍</span>
+										<span className="text-sm font-extrabold tracking-wide">{day.location}</span>
+									</div>
 								</div>
 							</div>
 
