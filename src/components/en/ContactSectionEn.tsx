@@ -36,84 +36,84 @@ const ContactSectionEn = () => {
         ))}
       </div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
             Registration & Contact
           </h2>
           
           {/* Date Display positioned prominently */}
-          <div className="mb-8 flex justify-center">
+          <div className="mb-6 sm:mb-8 flex justify-center">
             <DateDisplayEn variant="contact" className="animate-[date-bounce-in_1s_ease-out_0.2s_forwards]" />
           </div>
           
-          <p className="text-xl text-white/80 backdrop-blur-sm bg-white/10 rounded-full px-8 py-3 inline-block border border-white/20">
+          <p className="text-lg sm:text-xl text-white/80 backdrop-blur-sm bg-white/10 rounded-full px-6 sm:px-8 py-3 inline-block border border-white/20 max-w-sm sm:max-w-none mx-auto">
             For any inquiries, please contact:
           </p>
         </div>
         
         <div className="max-w-3xl mx-auto">
           {/* Glassmorphism Contact Card */}
-          <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl border border-white/30 p-8 mb-12 animate-fade-in-up shadow-2xl" 
+          <div className="relative bg-white/20 backdrop-blur-sm rounded-3xl border border-white/30 p-4 sm:p-6 md:p-8 mb-12 animate-fade-in-up shadow-2xl" 
                style={{animationDelay: '0.3s'}}>
-            {/* Simple floating elements */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-white/20 rounded-full blur-xl animate-float"></div>
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/15 rounded-full blur-xl animate-float-delayed"></div>
+            {/* Simple floating elements - hidden on very small screens */}
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-white/20 rounded-full blur-xl animate-float hidden sm:block"></div>
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-white/15 rounded-full blur-xl animate-float-delayed hidden sm:block"></div>
             
             <div className="relative z-10">
               {/* Header section */}
-              <div className="text-center mb-10">
+              <div className="text-center mb-8 sm:mb-10">
                 <div className="relative inline-block">
                   <div className="absolute inset-0 bg-white/20 rounded-2xl blur-lg"></div>
-                  <h3 className="relative text-3xl font-bold text-white mb-2 px-6 py-3">
+                  <h3 className="relative text-2xl sm:text-3xl font-bold text-white mb-2 px-4 sm:px-6 py-2 sm:py-3">
                     Jesson Lim 林杰鑫
                   </h3>
                 </div>
-                <p className="text-lg text-white/80 bg-white/15 backdrop-blur-sm rounded-full px-6 py-2 inline-block border border-white/20">
+                <p className="text-base sm:text-lg text-white/80 bg-white/15 backdrop-blur-sm rounded-full px-4 sm:px-6 py-2 inline-block border border-white/20">
                   Edu Tour Leader
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-1 gap-8">
-                <div className="group relative bg-white/15 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/25 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1">
-                  <div className="flex items-center space-x-4">
-                    <div className="relative">
+              <div className="grid md:grid-cols-1 gap-6 sm:gap-8">
+                <div className="group relative bg-white/15 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/25 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
+                    <div className="relative flex-shrink-0">
                       <div className="absolute inset-0 bg-white/30 rounded-full blur-md group-hover:blur-lg transition-all duration-500"></div>
-                      <Mail className="relative w-8 h-8 text-white flex-shrink-0" />
+                      <Mail className="relative w-6 h-6 sm:w-8 sm:h-8 text-white" />
                     </div>
-                    <div>
-                      <p className="font-semibold text-white mb-1">Email:</p>
-                      <a href="mailto:bino.edutour@outlook.com" className="text-white/80 hover:text-white transition-colors text-lg">
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-white mb-1 text-sm sm:text-base">Email:</p>
+                      <a href="mailto:bino.edutour@outlook.com" className="text-white/80 hover:text-white transition-colors text-sm sm:text-lg break-all">
                         bino.edutour@outlook.com
                       </a>
                     </div>
                   </div>
                 </div>
                 
-                <div className="group relative bg-white/15 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/25 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1">
-                  <div className="flex items-center space-x-4">
-                    <div className="relative">
+                <div className="group relative bg-white/15 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/25 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
+                    <div className="relative flex-shrink-0">
                       <div className="absolute inset-0 bg-white/30 rounded-full blur-md group-hover:blur-lg transition-all duration-500"></div>
-                      <Phone className="relative w-8 h-8 text-white flex-shrink-0" />
+                      <Phone className="relative w-6 h-6 sm:w-8 sm:h-8 text-white" />
                     </div>
-                    <div>
-                      <p className="font-semibold text-white mb-1">Phone:</p>
-                      <a href="tel:+60167100678" className="text-white/80 hover:text-white transition-colors text-lg">
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-white mb-1 text-sm sm:text-base">Phone:</p>
+                      <a href="tel:+60167100678" className="text-white/80 hover:text-white transition-colors text-sm sm:text-lg">
                         +60 16 710 0678
                       </a>
                     </div>
                   </div>
                 </div>
                 
-                <div className="group relative bg-white/15 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/25 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1">
-                  <div className="flex items-start space-x-4">
-                    <div className="relative mt-1">
+                <div className="group relative bg-white/15 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/25 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1">
+                  <div className="flex items-start space-x-3 sm:space-x-4">
+                    <div className="relative mt-1 flex-shrink-0">
                       <div className="absolute inset-0 bg-white/30 rounded-full blur-md group-hover:blur-lg transition-all duration-500"></div>
-                      <MapPin className="relative w-8 h-8 text-white flex-shrink-0" />
+                      <MapPin className="relative w-6 h-6 sm:w-8 sm:h-8 text-white" />
                     </div>
-                    <div>
-                      <p className="font-semibold text-white mb-2">Address:</p>
-                      <p className="text-white/80 leading-relaxed">
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-white mb-2 text-sm sm:text-base">Address:</p>
+                      <p className="text-white/80 leading-relaxed text-sm sm:text-base break-words">
                         Suite No. 9-7, Wisma UOA 2, 21 Jalan Pinang, 50450 Kuala Lumpur, Malaysia
                       </p>
                     </div>
@@ -124,16 +124,16 @@ const ContactSectionEn = () => {
           </div>
           
           {/* CTA Button */}
-          <div className="text-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+          <div className="text-center animate-fade-in-up px-4" style={{animationDelay: '0.6s'}}>
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl animate-pulse"></div>
               <Button 
                 onClick={() => window.open("https://wa.me/60167100678", "_blank")}
-                className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold text-2xl px-16 py-8 rounded-2xl border-2 border-white/30 shadow-2xl transition-all duration-500 hover:scale-105 backdrop-blur-sm"
+                className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold text-lg sm:text-xl md:text-2xl px-8 sm:px-12 md:px-16 py-4 sm:py-6 md:py-8 rounded-2xl border-2 border-white/30 shadow-2xl transition-all duration-500 hover:scale-105 backdrop-blur-sm w-full sm:w-auto max-w-sm sm:max-w-none"
               >
-                <span className="flex items-center space-x-3">
-                  <span>Register Now</span>
-                  <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
+                <span className="flex items-center justify-center space-x-2 sm:space-x-3">
+                  <span className="text-center leading-tight">Register Now</span>
+                  <div className="w-3 h-3 bg-white rounded-full animate-pulse flex-shrink-0"></div>
                 </span>
               </Button>
             </div>
