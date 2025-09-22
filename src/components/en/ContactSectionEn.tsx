@@ -70,7 +70,7 @@ const ContactSectionEn = () => {
                   </h3>
                 </div>
                 <p className="text-lg text-white/80 bg-white/15 backdrop-blur-sm rounded-full px-6 py-2 inline-block border border-white/20">
-                  Study Tour Leader
+                  Edu Tour Leader
                 </p>
               </div>
               

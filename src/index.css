@@ -1,8 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-/* Design system for Japanese business study tour landing page.
+/* Design system for Japanese business edu tour landing page.
    Deep green education theme with bright green CTAs (WhatsApp style).
    All colors MUST be HSL.
 */

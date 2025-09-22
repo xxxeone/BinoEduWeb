@@ -41,7 +41,7 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <img src={logo} alt="Bino EduTour" className="h-8 w-auto" />
             <span className="text-xl font-bold text-white drop-shadow-xl">
-              {isEnglish ? "Bino Study Tour" : "百诺研学"}
+              {isEnglish ? "Bino Edu Tour" : "百诺研学"}
             </span>
           </div>
           

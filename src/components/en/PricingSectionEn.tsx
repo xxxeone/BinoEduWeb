@@ -90,7 +90,7 @@ const PricingSectionEn = () => {
             </span>
           </div>
           <h2 className="text-6xl md:text-7xl font-black tracking-tight mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent animate-slide-in-view">
-            Beyond Imagination Business Study Tour
+            Beyond Imagination Business Edu Tour
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-white/40 via-white to-white/40 mx-auto mb-6 rounded-full animate-pulse"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.3s'}}>
@@ -324,7 +324,7 @@ const PricingSectionEn = () => {
             </h3>
             <div className="w-20 h-1 bg-gradient-to-r from-white/40 via-white to-white/40 mx-auto mb-4 rounded-full"></div>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Real feedback from past entrepreneurs, witnessing the study tour's exceptional value
+              Real feedback from past entrepreneurs, witnessing the edu tour's exceptional value
             </p>
           </div>
 

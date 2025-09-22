@@ -35,7 +35,7 @@ const DateDisplayEn: React.FC<DateDisplayProps> = ({ variant = 'hero', className
           </span>
           {/* Subtitle next to the date */}
           <span className="text-base text-white/70 font-medium animate-[date-float-slow_25s_ease-in-out_infinite]">
-            Business Study Tour
+            Business Edu Tour
           </span>
         </div>
       </div>
