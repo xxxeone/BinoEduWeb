@@ -320,7 +320,7 @@ const PricingSectionEn = () => {
         <div className="mt-32 animate-fade-in-up" style={{animationDelay: '2.5s'}}>
           <div className="text-center mb-16">
             <h3 className="text-4xl md:text-5xl font-black text-white mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
-              Entrepreneurs Rave Reviews
+              Entrepreneur Testimonials
             </h3>
             <div className="w-20 h-1 bg-gradient-to-r from-white/40 via-white to-white/40 mx-auto mb-4 rounded-full"></div>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -343,7 +343,7 @@ const PricingSectionEn = () => {
                 <div className="relative overflow-hidden rounded-xl border border-white/20">
                   <img
                     src={image}
-                    alt={`Entrepreneur Review ${index + 1}`}
+                    alt={`Entrepreneur Testimonial ${index + 1}`}
                     className="w-full h-auto object-cover saturate-[0.2] group-hover:saturate-100 transition-all duration-500 transform group-hover:scale-[1.02]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -378,7 +378,7 @@ const PricingSectionEn = () => {
             </button>
             <img
               src={selectedImage}
-              alt="Entrepreneur Review Enlarged"
+              alt="Entrepreneur Testimonial Enlarged"
               className="w-full h-auto object-contain rounded-2xl border-2 border-white/30 shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />

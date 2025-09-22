@@ -48,7 +48,7 @@ const itinerary = [
 	{
 		day: "Day 2",
 		location: "Osaka",
-		title: "Industry Benchmark · Starting from Heart",
+		title: "Industry Leaders · Heart-Driven Excellence",
 		color: "bg-red-600",
 		activities: [
 			{ icon: "🏢", text: "Okayama Health Food Group Corporate Visit: Integrated Chain · Standardization & Quality" },
@@ -117,7 +117,7 @@ const itinerary = [
 	{
 		day: "Day 6",
 		location: "Osaka",
-		title: "Continue Original Intent · Return with Fullness",
+		title: "Journey's End · Enriched Return",
 		color: "bg-red-600",
 		activities: [{ icon: "✈️", text: "Airport Transfer/Individual Departure" }],
 		focus: ["Personal Action Plan: Bring Learning Back to Team"],
@@ -182,7 +182,7 @@ const ItinerarySectionEn = () => {
 					</h2>
 					<div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-emerald-400 mx-auto mb-8 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.6)]" />
 					<p className="text-2xl md:text-3xl text-gray-200 font-semibold max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-						6 Days 5 Nights · From Philosophy to Gemba · From Benchmarks to Methods<br />
+						6 Days 5 Nights · From Philosophy to Practice · From Benchmarks to Methods<br />
 						Each day has clear learning focus & actionable takeaways
 					</p>
 				</div>
@@ -194,32 +194,6 @@ const ItinerarySectionEn = () => {
 							className="group relative bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)] opacity-0 animate-[slide-in-view_0.8s_ease-out_forwards]"
 							style={{ animationDelay: `${idx * 0.2}s` }}
 						>
-							{/* Location label - mobile: separate line, desktop: top right */}
-							<div className="md:absolute md:top-4 md:right-4 z-20">
-								<div className="relative">
-									{/* Main badge */}
-									<div className="bg-gradient-to-br from-emerald-500 via-green-500 to-emerald-600 text-white font-bold px-3 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl shadow-2xl border-2 border-emerald-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300">
-										<div className="flex items-center gap-1 md:gap-2">
-											<span className="text-sm md:text-lg">📍</span>
-											<span className="text-xs md:text-sm font-extrabold tracking-wide">{day.location}</span>
-										</div>
-									</div>
-									
-									{/* Subtle glow effect */}
-									<div className="absolute inset-0 rounded-xl md:rounded-2xl bg-gradient-to-br from-emerald-400/20 to-green-500/20 blur-lg -z-10"></div>
-								</div>
-							</div>
-
-							{/* Mobile location display - separate line */}
-							<div className="md:hidden px-6 pt-4 pb-2">
-								<div className="inline-block bg-gradient-to-br from-emerald-500 via-green-500 to-emerald-600 text-white font-bold px-4 py-2 rounded-xl shadow-xl border-2 border-emerald-400/50">
-									<div className="flex items-center gap-2">
-										<span className="text-sm">📍</span>
-										<span className="text-sm font-extrabold tracking-wide">{day.location}</span>
-									</div>
-								</div>
-							</div>
-
 							{/* Day header with gradient */}
 							<div className="relative h-16 bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-between px-6 overflow-hidden">
 								<div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-purple-600/90" />
@@ -228,11 +202,31 @@ const ItinerarySectionEn = () => {
 									<div className="w-px h-8 bg-white/30" />
 									<span className="text-lg font-bold text-white/90">{day.title}</span>
 								</div>
+								
+								{/* Location badge in header - desktop only */}
+								<div className="hidden md:block relative z-20">
+									<div className="bg-gradient-to-br from-emerald-500 via-green-500 to-emerald-600 text-white font-bold px-4 py-2 rounded-xl shadow-xl border-2 border-emerald-400/50 backdrop-blur-sm">
+										<div className="flex items-center gap-2">
+											<span className="text-sm">📍</span>
+											<span className="text-xs font-extrabold tracking-wide">{day.location}</span>
+										</div>
+									</div>
+								</div>
+								
 								<div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16" />
 							</div>
 
 							{/* Content */}
 							<div className="p-6 space-y-6">
+								{/* Mobile location badge */}
+								<div className="md:hidden flex justify-center -mt-2 mb-4">
+									<div className="bg-gradient-to-br from-emerald-500 via-green-500 to-emerald-600 text-white font-bold px-4 py-2 rounded-xl shadow-xl border-2 border-emerald-400/50 backdrop-blur-sm">
+										<div className="flex items-center gap-2">
+											<span className="text-sm">📍</span>
+											<span className="text-xs font-extrabold tracking-wide">{day.location}</span>
+										</div>
+									</div>
+								</div>
 								{/* Image */}
 								<div className="relative rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-500">
 									<img
@@ -299,6 +293,7 @@ const ItinerarySectionEn = () => {
 						</div>
 					))}
 				</div>
+
 				{/* CTA Section */}
 				<div className="text-center opacity-0 animate-[fade-in-up_1s_ease-out_forwards] animation-delay-[1.2s]">
 					<div className="mb-8">
