@@ -328,7 +328,7 @@ const PricingSectionEn = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-16 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-7xl mx-auto">
             {testimonyImages.map((image, index) => (
               <div
                 key={index}
