@@ -1,47 +1,45 @@
 import { Button } from "@/components/ui/button";
 import { Check, Crown } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 // Import testimony images
 import React, { useState } from 'react';
-import testimony1 from '../assets/Testimony 2/14.png';
-import testimony2 from '../assets/Testimony 2/15.png';
-import testimony3 from '../assets/Testimony 2/16.png';
-import testimony4 from '../assets/Testimony 2/17.png';
-import testimony5 from '../assets/Testimony 2/18.png';
-import testimony6 from '../assets/Testimony 2/19.png';
+import testimony1 from '../../assets/Testimony 2/14.png';
+import testimony2 from '../../assets/Testimony 2/15.png';
+import testimony3 from '../../assets/Testimony 2/16.png';
+import testimony4 from '../../assets/Testimony 2/17.png';
+import testimony5 from '../../assets/Testimony 2/18.png';
+import testimony6 from '../../assets/Testimony 2/19.png';
 
-const PricingSection = () => {
-  
+const PricingSectionEn = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const plans = [
     {
-      title: "双人间",
+      title: "Twin Sharing",
       price: "RM 7,999",
-      discount: "两人同行 RM 7,599 / 人",
+      discount: "2 pax together RM 7,599 / person",
       includes: [
-  "餐饮（含 5早，1午 & 2晚）",
-  "企业参访及活动行程安排",
-  "双语导师随行翻译与学习引导",
-  "阿米巴/精益主题工作坊（复盘笔记模板）",
-  "VVIP 人脉连接",
-  "4 星级或以上酒店"
+  "Meals (5 breakfasts, 1 lunch & 2 dinners)",
+  "Corporate visits & activity arrangements",
+  "Bilingual mentors & learning guidance",
+  "Amoeba/Lean workshop (review templates)",
+  "VVIP networking connections",
+  "4-star or above hotels"
       ],
-      excludes: "机票"
+      excludes: "Flight tickets"
     },
     {
-      title: "升级单人间",
-      price: "RM 9,899 / 人", 
+      title: "Single Room Upgrade",
+      price: "RM 9,899 / person", 
       discount: null,
       includes: [
-  "餐饮（含 5早，1午 & 2晚）",
-  "企业参访及活动行程安排",
-  "双语导师随行翻译与学习引导",
-  "阿米巴/精益主题工作坊（复盘笔记模板）",
-  "VVIP 人脉连接",
-  "4 星级或以上酒店"
+  "Meals (5 breakfasts, 1 lunch & 2 dinners)",
+  "Corporate visits & activity arrangements",
+  "Bilingual mentors & learning guidance",
+  "Amoeba/Lean workshop (review templates)",
+  "VVIP networking connections",
+  "4-star or above hotels"
       ],
-      excludes: "机票"
+      excludes: "Flight tickets"
     }
   ];
 
@@ -88,15 +86,15 @@ const PricingSection = () => {
         <div className="text-center mb-20 animate-fade-in-up">
           <div className="inline-block mb-6 animate-slide-in-view">
             <span className="px-6 py-3 bg-white/20 backdrop-blur-md text-white rounded-full text-sm font-medium tracking-wider border border-white/30 shadow-lg">
-              投资价值
+              Investment Value
             </span>
           </div>
           <h2 className="text-6xl md:text-7xl font-black tracking-tight mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent animate-slide-in-view">
-            超乎想象的商务研修团
+            Beyond Imagination Business Study Tour
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-white/40 via-white to-white/40 mx-auto mb-6 rounded-full animate-pulse"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.3s'}}>
-            高端商务行程 · 专属人脉资源 · 企业家思维升级
+            Premium business itinerary · Exclusive networking resources · Entrepreneur mindset upgrade
           </p>
         </div>
   <div className="space-y-8 max-w-5xl mx-auto">
@@ -134,7 +132,7 @@ const PricingSection = () => {
               {index === 0 && (
                 <div className="absolute -top-4 left-8 animate-bounce" style={{animationDelay: '1s'}}>
                   <span className="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full text-sm font-semibold border border-white/30 shadow-lg">
-                    推荐选择
+                    Recommended
                   </span>
                 </div>
               )}
@@ -146,7 +144,7 @@ const PricingSection = () => {
                     <h3 className="text-3xl font-black text-white animate-slide-in-view">{plan.title}</h3>
                     {plan.discount && (
                       <span className="bg-green-600/80 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-green-500/60 animate-pulse shadow-lg shadow-green-500/20">
-                        限时优惠
+                        Limited Time
                       </span>
                     )}
                   </div>
@@ -157,7 +155,7 @@ const PricingSection = () => {
                         <div className="p-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
                           <Check className="w-4 h-4 text-white" />
                         </div>
-                        包含服务
+                        Included Services
                       </h4>
                       <ul className="space-y-3">
                         {plan.includes.slice(0, 3).map((item, idx) => (
@@ -169,7 +167,7 @@ const PricingSection = () => {
                       </ul>
                       
                       <div className="mt-6 flex items-center gap-3 text-base text-gray-400 bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-                        <span className="font-semibold text-gray-300">不含：</span>
+                        <span className="font-semibold text-gray-300">Excludes:</span>
                         <span>{plan.excludes}</span>
                       </div>
                     </div>
@@ -227,7 +225,7 @@ const PricingSection = () => {
                     {/* Button green glow effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 via-green-300/10 to-transparent opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500 rounded-xl"></div>
                     <span className="relative z-10 flex items-center gap-3">
-                      立即报名
+                      Register Now
                       <span className="text-xl group-hover/btn:translate-x-1 transition-transform duration-300">→</span>
                     </span>
                   </Button>
@@ -258,20 +256,20 @@ const PricingSection = () => {
               {/* Title and highlights */}
               <div className="text-center space-y-4">
                 <h3 className="text-3xl font-black text-white mb-4 animate-slide-in-view" style={{animationDelay: '1.1s'}}>
-                  限量席位抢订中
+                  Limited Seats - Booking Now
                 </h3>
                 <div className="grid md:grid-cols-3 gap-4 text-sm">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 animate-fade-in-up" style={{animationDelay: '1.3s'}}>
-                    <div className="font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent text-lg mb-1">专属导师</div>
-                    <div className="text-gray-300">双语商务导师随行</div>
+                    <div className="font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent text-lg mb-1">Exclusive Mentors</div>
+                    <div className="text-gray-300">Bilingual business mentors</div>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 animate-fade-in-up" style={{animationDelay: '1.4s'}}>
-                    <div className="font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent text-lg mb-1">深度参访</div>
-                    <div className="text-gray-300">Fortune 500企业内部交流</div>
+                    <div className="font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent text-lg mb-1">Deep Visits</div>
+                    <div className="text-gray-300">Fortune 500 internal exchanges</div>
                   </div>
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 animate-fade-in-up" style={{animationDelay: '1.5s'}}>
-                    <div className="font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent text-lg mb-1">人脉资源</div>
-                    <div className="text-gray-300">VVIP商务圈层连接</div>
+                    <div className="font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent text-lg mb-1">Network Resources</div>
+                    <div className="text-gray-300">VVIP business circle connections</div>
                   </div>
                 </div>
               </div>
@@ -279,8 +277,8 @@ const PricingSection = () => {
               {/* Progress section */}
               <div className="space-y-6">
                 <div className="flex items-center justify-between text-gray-200 font-semibold text-lg">
-                  <span className="animate-slide-in-view" style={{animationDelay: '1.6s'}}>已报名</span>
-                  <span className="animate-slide-in-view" style={{animationDelay: '1.7s'}}>剩余席位</span>
+                  <span className="animate-slide-in-view" style={{animationDelay: '1.6s'}}>Registered</span>
+                  <span className="animate-slide-in-view" style={{animationDelay: '1.7s'}}>Remaining Seats</span>
                 </div>
                 
                 <div className="w-full bg-white/20 backdrop-blur-sm rounded-full h-4 border border-white/30 shadow-inner overflow-hidden">
@@ -296,23 +294,23 @@ const PricingSection = () => {
                 <div className="flex items-center justify-between">
                   <div className="text-center animate-fade-in-up" style={{animationDelay: '2s'}}>
                     <div className="font-black text-white text-2xl">25</div>
-                    <div className="text-gray-400 text-sm">位企业家</div>
+                    <div className="text-gray-400 text-sm">Entrepreneurs</div>
                   </div>
                   <div className="text-center bg-white/20 backdrop-blur-sm px-6 py-3 rounded-2xl border border-white/30 animate-pulse" style={{animationDelay: '2.1s'}}>
                     <div className="font-black text-white text-xl">25/35</div>
-                    <div className="text-gray-300 text-xs">总席位</div>
+                    <div className="text-gray-300 text-xs">Total Seats</div>
                   </div>
                   <div className="text-center animate-fade-in-up" style={{animationDelay: '2.2s'}}>
                     <div className="font-black text-green-400 text-2xl">10</div>
-                    <div className="text-gray-400 text-sm">最后席位</div>
+                    <div className="text-gray-400 text-sm">Last Seats</div>
                   </div>
                 </div>
               </div>
 
               {/* Call to action */}
               <div className="text-center bg-gradient-to-r from-red-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-6 border border-red-300/30 animate-fade-in-up" style={{animationDelay: '2.3s'}}>
-                <div className="text-red-300 font-bold text-lg mb-2">抢订提醒</div>
-                <div className="text-gray-300 text-sm">每年仅开放2期，错过需等待半年</div>
+                <div className="text-red-300 font-bold text-lg mb-2">Booking Reminder</div>
+                <div className="text-gray-300 text-sm">Only 2 sessions per year, miss this and wait 6 months</div>
               </div>
             </div>
           </div>
@@ -322,11 +320,11 @@ const PricingSection = () => {
         <div className="mt-32 animate-fade-in-up" style={{animationDelay: '2.5s'}}>
           <div className="text-center mb-16">
             <h3 className="text-4xl md:text-5xl font-black text-white mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
-              企业家好评如潮
+              Entrepreneurs Rave Reviews
             </h3>
             <div className="w-20 h-1 bg-gradient-to-r from-white/40 via-white to-white/40 mx-auto mb-4 rounded-full"></div>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              历届参与企业家的真实反馈，见证研修团的卓越价值
+              Real feedback from past entrepreneurs, witnessing the study tour's exceptional value
             </p>
           </div>
 
@@ -345,7 +343,7 @@ const PricingSection = () => {
                 <div className="relative overflow-hidden rounded-xl border border-white/20">
                   <img
                     src={image}
-                    alt={`企业家好评 ${index + 1}`}
+                    alt={`Entrepreneur Review ${index + 1}`}
                     className="w-full h-auto object-cover saturate-[0.2] group-hover:saturate-100 transition-all duration-500 transform group-hover:scale-[1.02]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -380,7 +378,7 @@ const PricingSection = () => {
             </button>
             <img
               src={selectedImage}
-              alt="企业家好评放大图"
+              alt="Entrepreneur Review Enlarged"
               className="w-full h-auto object-contain rounded-2xl border-2 border-white/30 shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />
@@ -391,4 +389,4 @@ const PricingSection = () => {
   );
 };
 
-export default PricingSection;
+export default PricingSectionEn;

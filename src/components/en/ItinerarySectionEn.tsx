@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import DateDisplay from "./DateDisplay";
+import DateDisplayEn from "./DateDisplayEn";
 import businessmanImg from "@/assets/businessman-alone.png";
 import kyotoImg from "@/assets/kyocera2.jpg";
 import day2Img from "@/assets/sushi3.jpg";
@@ -31,97 +31,97 @@ import galleryImg17 from "@/assets/Photojapan/IMG_4993.jpeg";
 const itinerary = [
 	{
 		day: "Day 1",
-		location: "大阪",
-		title: "经营之道 · 相聚起点",
+		location: "Osaka",
+		title: "Management Path · Gathering Point",
 		color: "bg-red-600",
 		activities: [
-			{ icon: "✈️", text: "抵达大阪：企业家报道" },
-			{ icon: "🍽️", text: "开营晚宴+日本礼仪基础课程" },
+			{ icon: "✈️", text: "Arrive in Osaka: Entrepreneur Registration" },
+			{ icon: "🍽️", text: "Opening Dinner + Basic Japanese Etiquette Course" },
 		],
 		focus: [
-			"建立共同语言：了解【稻盛经营】哲学核心 与 【丰田智慧】精益思维", 
-			"设定专属学习目标，明确此行想要突破的【天花板】"
+			"Establish Common Language: Understand [Inamori Management] Philosophy Core & [Toyota Wisdom] Lean Thinking", 
+			"Set Personalized Learning Goals, Clarify the [Ceiling] You Want to Break Through"
 		],
 		extra: [],
 		image: osakaImg,
 	},
 	{
 		day: "Day 2",
-		location: "大阪",
-		title: "产业标杆 · 从心出发",
+		location: "Osaka",
+		title: "Industry Benchmark · Starting from Heart",
 		color: "bg-red-600",
 		activities: [
-			{ icon: "🏢", text: "冈山健康餐饮集团 企业考察：一体化链路 · 标准化与品质" },
-			{ icon: "🏥", text: "川村义肢 企业考察：隐形冠军 · 匠心与用户同理" },
-			{ icon: "🍜", text: "道顿堀 · 心斋桥" },
+			{ icon: "🏢", text: "Okayama Health Food Group Corporate Visit: Integrated Chain · Standardization & Quality" },
+			{ icon: "🏥", text: "Kawamura Gishi Corporate Visit: Hidden Champion · Craftsmanship & User Empathy" },
+			{ icon: "🍜", text: "Dotonbori · Shinsaibashi" },
 		],
 		focus: [
-			"隐形冠军的长期竞争力", 
-			"标准化与品质驱动的增长逻辑"
+			"Hidden Champion's Long-term Competitiveness", 
+			"Standardization & Quality-driven Growth Logic"
 		],
 		extra: [],
 		image: day2Img,
 	},
 	{
 		day: "Day 3",
-		location: "大阪 - 京都",
-		title: "走进稻盛 · 解析京瓷",
+		location: "Osaka - Kyoto",
+		title: "Enter Inamori · Decode Kyocera",
 		color: "bg-red-600",
 		activities: [
-			{ icon: "🏭", text: "京瓷集团总部 企业考察：世界500强的研发与精益生产" },
-			{ icon: "🏛️", text: "稻盛和夫纪念馆：追溯稻盛和夫的哲学与智慧" },
-			{ icon: "⛰️", text: "岚山 景区" },
+			{ icon: "🏭", text: "Kyocera Group HQ Corporate Visit: Fortune 500 R&D & Lean Production" },
+			{ icon: "🏛️", text: "Inamori Kazuo Memorial Hall: Trace Inamori's Philosophy & Wisdom" },
+			{ icon: "⛰️", text: "Arashiyama Scenic Area" },
 		],
 		focus: [
-			"【敬天爱人】的经营原点", 
-			"长期主义的思维定力",
-			"人生方程式 = 思维方式 x 热情 x 能力"
+			"[Respect Heaven, Love People] Management Origin", 
+			"Long-term Thinking Determination",
+			"Life Equation = Mindset x Passion x Ability"
 		],
 		extra: [],
 		image: kyotoImg,
 	},
 	{
 		day: "Day 4",
-		location: "京都 - 名古屋 - 京都",
-		title: "精益制造 · 驱驭未来",
+		location: "Kyoto - Nagoya - Kyoto",
+		title: "Lean Manufacturing · Driving Future",
 		color: "bg-red-600",
 		activities: [
-			{ icon: "🚗", text: "丰田汽车总部 企业考察：精益生产的核心思想" },
-			{ icon: "⛩️", text: "伏见稻荷大社" },
-			{ icon: "🛕", text: "清水寺二三年坂" },
+			{ icon: "🚗", text: "Toyota Motor HQ Corporate Visit: Core Principles of Lean Production" },
+			{ icon: "⛩️", text: "Fushimi Inari Taisha" },
+			{ icon: "🛕", text: "Kiyomizu-dera Sannenzaka Ninenzaka" },
 		],
 		focus: [
-			"TPS 管理：即时化 x 自动化", 
-			"精益生产、持续改善"
+			"TPS Management: Just-in-Time x Automation", 
+			"Lean Production, Continuous Improvement"
 		],
 		extra: [],
 		image: toyotaImg,
 	},
 	{
 		day: "Day 5",
-		location: "京都 - 大阪",
-		title: "经营如艺 · 寿司之道",
+		location: "Kyoto - Osaka",
+		title: "Management as Art · Way of Sushi",
 		color: "bg-red-600",
 		activities: [
-			{ icon: "🍣", text: "梅守寿司 企业考察：何谓【经营】？" },
-			{ icon: "👨‍🍳", text: "寿司DIY制作体验" },
-			{ icon: "🎉", text: "闭营晚宴" },
+			{ icon: "🍣", text: "Umemori Sushi Corporate Visit: What is [Management]?" },
+			{ icon: "👨‍🍳", text: "Sushi DIY Making Experience" },
+			{ icon: "🎉", text: "Closing Banquet" },
 		],
 		focus: [
-			"理念先行的门店经营", 
-			"上下同心的组织氛围"
+			"Philosophy-first Store Management", 
+			"Unity in Organizational Atmosphere"
 		],
 		extra: [],
 		image: sushi4Img,
 	},
 	{
 		day: "Day 6",
-		location: "大阪",
-		title: "延续初心 · 满载而归",
+		location: "Osaka",
+		title: "Continue Original Intent · Return with Fullness",
 		color: "bg-red-600",
-		activities: [{ icon: "✈️", text: "送机/各自解散" }],
-		focus: ["个人行动计划：把学习带回团队"],
-		extra: ["一次旅行 · 一生教育"],
+		activities: [{ icon: "✈️", text: "Airport Transfer/Individual Departure" }],
+		focus: ["Personal Action Plan: Bring Learning Back to Team"],
+		extra: ["One Journey · Lifelong Education"],
 		image: balikImg,
 	},
 ];
@@ -147,7 +147,7 @@ const galleryPhotos = [
 	{ id: 17, image: galleryImg17, size: "normal" },
 ];
 
-const ItinerarySection = () => {
+const ItinerarySectionEn = () => {
 	return (
 		<section
 			id="itinerary"
@@ -178,12 +178,12 @@ const ItinerarySection = () => {
 				{/* Section header */}
 				<div className="text-center mb-24 opacity-0 animate-[fade-in-up_1s_ease-out_forwards]">
 					<h2 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tight text-white mb-8 drop-shadow-[0_8px_32px_rgba(0,0,0,0.8)]">
-						行程<span className="text-blue-400 hover:text-blue-300 transition-all duration-500 cursor-pointer hover:drop-shadow-[0_0_30px_rgba(59,130,246,1)] hover:scale-110 inline-block">安排</span>
+						Itinerary <span className="text-blue-400 hover:text-blue-300 transition-all duration-500 cursor-pointer hover:drop-shadow-[0_0_30px_rgba(59,130,246,1)] hover:scale-110 inline-block">Schedule</span>
 					</h2>
 					<div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-emerald-400 mx-auto mb-8 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.6)]" />
 					<p className="text-2xl md:text-3xl text-gray-200 font-semibold max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-						6天5夜 · 从理念到现场 · 从标杆到方法<br />
-						每一天都有清晰的学习聚焦与可带走的实践要点
+						6 Days 5 Nights · From Philosophy to Gemba · From Benchmarks to Methods<br />
+						Each day has clear learning focus & actionable takeaways
 					</p>
 				</div>
 				{/* Itinerary grid */}
@@ -253,7 +253,7 @@ const ItinerarySection = () => {
 									<div className="space-y-3">
 										<h4 className="text-emerald-400 font-bold text-lg flex items-center gap-2">
 											<span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-											学习聚焦
+											Learning Focus
 										</h4>
 										<div className="space-y-2">
 											{day.focus.map((f: string, fi: number) => (
@@ -293,7 +293,7 @@ const ItinerarySection = () => {
 				<div className="text-center opacity-0 animate-[fade-in-up_1s_ease-out_forwards] animation-delay-[1.2s]">
 					<div className="mb-8">
 						<p className="text-xl text-gray-300 mb-6 font-medium">
-							准备好开启这场深度学习之旅了吗？
+							Ready to embark on this deep learning journey?
 						</p>
 					</div>
 					<Button
@@ -305,7 +305,7 @@ const ItinerarySection = () => {
 						}
 					>
 						<span className="relative z-10 flex items-center gap-3">
-							<span>立即报名 / Sign Up Now</span>
+							<span>Register Now</span>
 							<span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
 						</span>
 						<div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -313,7 +313,7 @@ const ItinerarySection = () => {
 					
 					{/* Date reminder below CTA button */}
 					<div className="mt-8 flex justify-center">
-						<DateDisplay variant="contact" className="opacity-0 animate-[date-bounce-in_1s_ease-out_1.5s_forwards]" />
+						<DateDisplayEn variant="contact" className="opacity-0 animate-[date-bounce-in_1s_ease-out_1.5s_forwards]" />
 					</div>
 				</div>
 
@@ -322,11 +322,11 @@ const ItinerarySection = () => {
 					{/* Gallery header */}
 					<div className="text-center mb-16">
 						<h3 className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 drop-shadow-[0_8px_32px_rgba(0,0,0,0.8)]">
-							精彩<span className="text-emerald-400 hover:text-emerald-300 transition-all duration-500 cursor-pointer hover:drop-shadow-[0_0_30px_rgba(52,211,153,1)] hover:scale-110 inline-block">相册</span>
+							Amazing <span className="text-emerald-400 hover:text-emerald-300 transition-all duration-500 cursor-pointer hover:drop-shadow-[0_0_30px_rgba(52,211,153,1)] hover:scale-110 inline-block">Gallery</span>
 						</h3>
 						<div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-green-400 mx-auto mb-6 rounded-full shadow-[0_0_20px_rgba(52,211,153,0.6)]" />
 						<p className="text-xl text-gray-300 font-medium max-w-3xl mx-auto leading-relaxed">
-							记录每一个学习瞬间 · 珍藏每一份美好回忆
+							Capture every learning moment · Treasure every beautiful memory
 						</p>
 					</div>
 
@@ -348,7 +348,7 @@ const ItinerarySection = () => {
 									<div className={`relative ${aspectClass} overflow-hidden`}>
 										<img
 											src={photo.image}
-											alt={`精彩瞬间 ${photo.id}`}
+											alt={`Amazing Moment ${photo.id}`}
 											className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
 											loading="lazy"
 											decoding="async"
@@ -369,4 +369,4 @@ const ItinerarySection = () => {
 	);
 };
 
-export default ItinerarySection;
+export default ItinerarySectionEn;

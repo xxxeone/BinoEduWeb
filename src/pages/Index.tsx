@@ -16,10 +16,10 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <Header />
-  <HeroSection />
-  <PainPointsSection />
-  <OutcomesSection />
-  <HighlightsSection />
+      <HeroSection />
+      <PainPointsSection />
+      <OutcomesSection />
+      <HighlightsSection />
       <ItinerarySection />
       <PricingSection />
       <ContactSection />

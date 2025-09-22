@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin } from "lucide-react";
-import DateDisplay from "./DateDisplay";
-import jessonPhoto from "../assets/jesson3.png";
-import backgroundImg from "../assets/shushi4.jpg";
+import DateDisplayEn from "./DateDisplayEn";
+import jessonPhoto from "../../assets/jesson3.png";
+import backgroundImg from "../../assets/shushi4.jpg";
 
-const ContactSection = () => {
+const ContactSectionEn = () => {
   return (
     <section 
       id="contact" 
@@ -39,16 +39,16 @@ const ContactSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            报名与联系
+            Registration & Contact
           </h2>
           
           {/* Date Display positioned prominently */}
           <div className="mb-8 flex justify-center">
-            <DateDisplay variant="contact" className="animate-[date-bounce-in_1s_ease-out_0.2s_forwards]" />
+            <DateDisplayEn variant="contact" className="animate-[date-bounce-in_1s_ease-out_0.2s_forwards]" />
           </div>
           
           <p className="text-xl text-white/80 backdrop-blur-sm bg-white/10 rounded-full px-8 py-3 inline-block border border-white/20">
-            有任何咨询，欢迎联系：
+            For any inquiries, please contact:
           </p>
         </div>
         
@@ -70,7 +70,7 @@ const ContactSection = () => {
                   </h3>
                 </div>
                 <p className="text-lg text-white/80 bg-white/15 backdrop-blur-sm rounded-full px-6 py-2 inline-block border border-white/20">
-                  研学领队
+                  Study Tour Leader
                 </p>
               </div>
               
@@ -112,7 +112,7 @@ const ContactSection = () => {
                       <MapPin className="relative w-8 h-8 text-white flex-shrink-0" />
                     </div>
                     <div>
-                      <p className="font-semibold text-white mb-2">地址:</p>
+                      <p className="font-semibold text-white mb-2">Address:</p>
                       <p className="text-white/80 leading-relaxed">
                         Suite No. 9-7, Wisma UOA 2, 21 Jalan Pinang, 50450 Kuala Lumpur, Malaysia
                       </p>
@@ -132,7 +132,7 @@ const ContactSection = () => {
                 className="relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold text-2xl px-16 py-8 rounded-2xl border-2 border-white/30 shadow-2xl transition-all duration-500 hover:scale-105 backdrop-blur-sm"
               >
                 <span className="flex items-center space-x-3">
-                  <span>Sign Up Now / 立即报名</span>
+                  <span>Register Now</span>
                   <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                 </span>
               </Button>
@@ -144,4 +144,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContactSectionEn;
