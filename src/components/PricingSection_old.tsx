@@ -16,9 +16,9 @@ const PricingSection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const plans = [
     {
-      title: "双人间你",
+      title: "双人间",
       price: "RM 9,299",
-      discount: "两人同行 RM 7,599 / 人",
+      discount: "两人同行 RM 8,699 / 人",
       includes: [
   "餐饮（含 5早，1午 & 2晚）",
   "企业参访及活动行程安排",
@@ -41,7 +41,7 @@ const PricingSection = () => {
   "VVIP 人脉连接",
   "4 星级或以上酒店"
       ],
-      excludes: "机票我"
+      excludes: "机票"
     }
   ];
 

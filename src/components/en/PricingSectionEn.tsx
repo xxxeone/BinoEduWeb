@@ -16,7 +16,7 @@ const PricingSectionEn = () => {
     {
       title: "Twin Sharing",
       price: "RM 9,299",
-      discount: "2 pax together RM 8,599 / person",
+      discount: "2 pax together RM 8,699 / person",
       includes: [
   "Meals (5 breakfasts, 1 lunch & 2 dinners)",
   "Corporate visits & activity arrangements",

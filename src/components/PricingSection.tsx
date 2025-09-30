@@ -16,7 +16,7 @@ const PricingSection = () => {
     {
       title: "双人间",
       price: "RM 9,299",
-      discount: "两人同行 RM 8,599 / 人",
+      discount: "两人同行 RM 8,699 / 人",
       includes: [
   "餐饮（含 5早，1午 & 2晚）",
   "企业参访及活动行程安排",
